@@ -1,0 +1,98 @@
+.header{
+    background-color: $navy;
+    transform: translateY(-100px);
+    -webkit-transition: transform 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition:         transform 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding:15px 0;
+    .navbar{
+        padding: 0;
+        opacity: 0;
+        transition:opacity 1s cubic-bezier(.33,.04,.1,1);
+    }
+    .navbar-nav{
+        padding-top: 20px;
+    }
+
+    a{
+        color:#fff;
+        font-size: 11pt;
+    }
+    .navbar-toggler{
+        color: $wh;
+        padding-right: 0;
+    }
+  
+    .logo{
+        text-align: center;
+        border:1px solid #fff;
+        padding:5px 30px;
+        font-size:14px;
+    }
+   
+    .dropdown-menu{
+        color:#fff;
+        border-radius:0;
+        margin-top: 0;
+        border: none;
+        background-color: $gray;
+        @include viewport(small){
+            background-color:$navy;
+        }
+        .dropdown-item{
+            color:#fff;
+            padding:0.5rem 1.5rem
+        }
+    }
+    .search--wrapper{
+        font-size: 10pt;
+        border-bottom: 1px solid $wh;
+        margin-bottom: 10px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-align: center;
+        align-items: center;
+        .search--input{
+            background-color: transparent;
+            border:none;
+            color: $wh;
+            font-weight: $thin;
+            &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: $wh;
+                opacity: 1; /* Firefox */
+            }
+            
+            &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: $wh;
+            }
+            
+            &::-ms-input-placeholder { /* Microsoft Edge */
+                color: $wh;;
+            }
+        }
+        i{
+            color: $wh;
+        }
+    }
+    @include viewport(medium){
+        padding: 0;
+        .navbar-nav{
+            padding-top: 0;
+        }
+        .nav-link{
+            padding:40px 15px!important;
+            line-height: 1;
+        }
+        .logo{
+            margin: 17px 0;
+        }
+        .search--wrapper{
+            margin: 35px 0 35px 25px;
+        }
+    }
+}

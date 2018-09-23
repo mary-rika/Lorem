@@ -1,0 +1,33 @@
+
+.addAnimation{
+    .banner{    
+        transform: translateY(0);
+        &:before{
+            background-color: rgba($brown,0.86);
+        }
+    }
+    .header{
+        transform: translateY(0);
+        transition-delay: 3.3s;
+        .navbar{
+            opacity: 1;
+        }
+    }
+    .quote{
+        span{
+            opacity: 1;
+        }
+    }
+    .banner--inner{
+        transition-delay: 4s;
+        opacity: 1;
+    }
+    .white-btn{
+        opacity: 1;
+        transition-delay: 2.9s;
+    }
+    .intro{
+        opacity: 1;
+        transition-delay: 4.5s;
+    }
+}
