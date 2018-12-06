@@ -1,4 +1,7 @@
-to run the project locally :
+Home page UI in React .
+
+to run the project:
 
 yarn install 
+
 yarn start
