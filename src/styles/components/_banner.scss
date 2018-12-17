@@ -1,7 +1,7 @@
 .banner{
     position: relative;
     min-height: 500px;
-    transform: translateY(100vh);
+    transform: translateY(120vh);
     -webkit-transition: all 800ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
     transition:         all 800ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
     &--inner{
