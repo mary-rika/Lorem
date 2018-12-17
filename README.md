@@ -1,7 +1,6 @@
 Home page UI in React .
 
-to run the project:
+In the project directory, you can run:
+### `yarn install`
 
-yarn install 
-
-yarn start
+### `yarn start`
