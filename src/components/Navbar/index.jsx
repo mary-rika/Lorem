@@ -39,7 +39,7 @@ export default class NavBar extends Component {
                 <i className="fas fa-star"></i>
                 <i className="fas fa-star"></i>
               </div>
-              <p className="logo--text">LOGO GOES HERE</p>
+              <p className="logo--text">LOGO</p>
             </NavbarBrand>
             <NavbarToggler onClick={this.toggle} ><i className="fas fa-bars"></i></NavbarToggler>
             <Collapse isOpen={this.state.isOpen} navbar>

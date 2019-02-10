@@ -1,6 +1,6 @@
 Home page UI in React .
 
 In the project directory, you can run:
-### `yarn install`
+### `npm install`
 
-### `yarn start`
+### `npm start`

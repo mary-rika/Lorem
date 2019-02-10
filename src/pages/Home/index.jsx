@@ -10,6 +10,7 @@ export default class Home extends Component {
         super(props);
         this.state = {
             transition: false,
+            startScroll:false
         }
     }
     componentDidMount() {
@@ -17,8 +18,10 @@ export default class Home extends Component {
             this.setState({
                 transition: true
             })
-        }, 2000)
+        }, 1000)
     }
+
+  
     render() {
         let classes = classnames({ addAnimation: this.state.transition });
         return (
